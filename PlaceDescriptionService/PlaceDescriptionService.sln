@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PlaceDescriptionService", "PlaceDescriptionService\PlaceDescriptionService.vcxproj", "{9305762D-A553-422B-AC98-30BCB5E1A95B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{45122FE4-8E9D-4057-914F-82E9E51E62AA}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9305762D-A553-422B-AC98-30BCB5E1A95B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9305762D-A553-422B-AC98-30BCB5E1A95B}.Debug|Win32.Build.0 = Debug|Win32
+		{9305762D-A553-422B-AC98-30BCB5E1A95B}.Release|Win32.ActiveCfg = Release|Win32
+		{9305762D-A553-422B-AC98-30BCB5E1A95B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
