@@ -41,7 +41,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(GMOCK_HOME)\gtest\include;$(GMOCK_HOME)\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(GMOCK_HOME)\gtest\include;$(BOOST_ROOT);$(GMOCK_HOME)\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(GMOCK_HOME)\msvc\2010\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -55,13 +55,14 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_VARIADIC_MAX=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(GMOCK_HOME)\include;$(GMOCK_HOME)\gtest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(BOOST_ROOT);$(GMOCK_HOME)\include;$(GMOCK_HOME)\gtest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>gmock.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gmock.lib;boost_date_time-vc110-mt-gd-1_57.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\dev\boost_1_57_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
